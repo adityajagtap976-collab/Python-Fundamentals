@@ -9,3 +9,13 @@ def factorial(n):
 
 
 print(factorial(5))
+
+
+# Recursion function to find the factorial
+def factorial_r(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial_r(n - 1)
+
+
+print(factorial_r(4))
