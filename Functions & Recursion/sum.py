@@ -20,3 +20,13 @@ def cal_prod(a=5, b=7):
 
 
 print(cal_prod())
+
+
+# Recursive function to calculate the sum of first n natural numbers.
+def sum_of_natural(n):
+    if n == 0:
+        return 0
+    return sum_of_natural(n - 1) + n
+
+
+print(sum_of_natural(3))
