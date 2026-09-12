@@ -27,3 +27,15 @@ def print_elements(list):
 user_input = input("Enter the elements to print. ").split()
 
 print_elements(user_input)
+
+
+# Write a recursive function to print all elements in a list.
+def print_list(list, index=0):
+    if index == len(list):
+        return
+    print(list[index])
+    print_list(list, index + 1)
+
+
+fruits = ["Mango", "Apple", "Banana", "Cherry", "Orange"]
+print_list(fruits)
