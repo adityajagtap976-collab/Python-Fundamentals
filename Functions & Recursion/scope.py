@@ -10,7 +10,7 @@ def show_numbers():
 
 show_numbers()
 print(x)
-print(y)
+# print(y)
 
 
 def update_():
