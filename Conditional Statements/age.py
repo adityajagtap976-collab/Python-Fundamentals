@@ -37,7 +37,7 @@ print("liftoff")
 # --- function definition and call ---
 
 
-def classify_age(age):
+def classify_age(age: int) -> str:
     if age < 13:
         return "child"
     elif age < 20:
@@ -52,7 +52,7 @@ print(classify_age(8))
 # --- function with default argument ---
 
 
-def greet(name, greeting="Hello"):
+def greet(name: str, greeting: str = "Hello") -> str:
     return greeting + ", " + name
 
 

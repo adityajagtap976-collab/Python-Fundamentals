@@ -1,5 +1,5 @@
 # Function to convert USD to INR
-def USD_to_INR():
+def USD_to_INR() -> None:
     # Get the amount in USD from the user
     usd_amount = float(input("Enter the amount in USD: "))
 

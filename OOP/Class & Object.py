@@ -1,12 +1,12 @@
 class SmartBulb:
-    def __init__(self, brand):
+    def __init__(self, brand: str) -> None:
         self.brand = brand
         self.is_on = False
 
-    def toggle_power(self):
+    def toggle_power(self) -> None:
         self.is_on = not self.is_on
 
-    def set_brightness(self, new_level):
+    def set_brightness(self, new_level: int) -> None:
         if new_level >= 0 and new_level < 30:
             print("Low_Level")
         elif new_level >= 30 and new_level < 60:

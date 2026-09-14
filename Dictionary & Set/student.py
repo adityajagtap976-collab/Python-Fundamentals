@@ -13,9 +13,9 @@ unique = set(
 print(unique)
 
 # --- Dict Comprehension ---
-print("Banana" in unique)
-
 fruits = {"Apple", "Banana", "Cherry"}
+print("Banana" in fruits)
+
 word_lengths = {}
 for word in fruits:
     word_lengths[word] = len(word)

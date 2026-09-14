@@ -1,5 +1,5 @@
 # --- *args ---
-def add_all(*numbers):
+def add_all(*numbers: int) -> int:
     total = 0
     for n in numbers:
         total = total + n
@@ -11,7 +11,7 @@ print(add_all(5, 10, 15, 20))
 
 
 # --- **kwargs ---
-def print_user_profile(**details):
+def print_user_profile(**details: object) -> None:
     for key, value in details.items():
         print(f"{key}: {value}")
 

@@ -2,7 +2,7 @@
 x = 10  # Global Variable
 
 
-def show_numbers():
+def show_numbers() -> None:
     y = 5  # Local Variable
     print(x)
     print(y)
@@ -13,7 +13,7 @@ print(x)
 # print(y)
 
 
-def update_():
+def update_() -> None:
     global x
     x = 20
 

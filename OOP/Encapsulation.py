@@ -1,14 +1,14 @@
 class SmartThermostat:
-    def __init__(self, brand, initial_temp):
+    def __init__(self, brand: str, initial_temp: int) -> None:
         self.brand = brand
         self.__temperature = initial_temp  # Private attribute
 
     # Getter method to safely VIEW the temperature
-    def get_temperature(self):
+    def get_temperature(self) -> int:
         return self.__temperature
 
     # Setter method to safely UPDATE the temperature
-    def set_temperature(self, new_temp):
+    def set_temperature(self, new_temp: int) -> None:
         if 60 <= new_temp <= 90:  # Safe range check
             self.__temperature = new_temp
             print(f"Temperature set to {self.__temperature}°F")
