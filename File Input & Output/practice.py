@@ -33,4 +33,13 @@ with open(FILE_PATH, "r", encoding="utf-8") as f:
         if "learning" in line:
             print(line_no)
 
+# From a file containing numbers by comma, print the count of even numbers.
+with open(FILE_PATH, "w", encoding="utf-8") as f:
+    f.write("1,2,3,4,5,6,7,8,9,10")
+with open(FILE_PATH, "r", encoding="utf-8") as f:
+    data = f.read()
+    numbers = [int(x) for x in data.split(",")]
+    even_count = sum(1 for x in numbers if x % 2 == 0)
+    print(even_count)
+
 os.remove(FILE_PATH)
