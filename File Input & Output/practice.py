@@ -1,6 +1,6 @@
-FILE_PATH = r"C:\Users\adity\practice.txt"
 import os
 
+FILE_PATH = r"C:\Users\adity\practice.txt"
 # File Input/Output: Creating a file
 with open(FILE_PATH, "x") as f:
     f.write(
