@@ -1,3 +1,9 @@
+import os
+
+# File Input/Output: Creating a file
+with open("C:\\Users\\adity\\sample.txt", "x") as f:
+    f.write("This is a sample file created using Python.")
+
 # File Input/Output: Reading
 with open("C:\\Users\\adity\\sample.txt", "r") as f:
     print(f.read())
@@ -23,6 +29,8 @@ with open("C:\\Users\\adity\\sample.txt", "a+") as f:
     )
     f.seek(0)
     print(f.read())
+
+os.remove("C:\\Users\\adity\\sample.txt")  # Delete the file if it exists
 
 
 # Character       Meaning
