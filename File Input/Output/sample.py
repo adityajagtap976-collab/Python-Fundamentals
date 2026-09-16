@@ -1,16 +1,14 @@
 # File Input/Output: Reading
 with open("C:\\Users\\adity\\sample.txt", "r") as f:
-    data = f.read()
-    lines = f.readlines()
-    print(data)
-    print(lines)
+    print(f.read())
+    f.seek(0)
+    print(f.readline())
 
 # File Input/Output: Writing
 with open("C:\\Users\\adity\\sample.txt", "w+") as f:
     f.write("Hi I am Aditya")
     f.seek(0)
-    data = f.read()
-    print(data)
+    print(f.read())
     print(f.tell())
 
 # File Input/Output: Appending
@@ -24,8 +22,7 @@ with open("C:\\Users\\adity\\sample.txt", "a+") as f:
         + "and I am in the 2nd year of my B.C.A course"
     )
     f.seek(0)
-    data = f.read()
-    print(data)
+    print(f.read())
 
 
 # Character       Meaning
