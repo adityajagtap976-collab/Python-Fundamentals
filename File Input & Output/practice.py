@@ -1,7 +1,8 @@
+FILE_PATH = r"C:\Users\adity\practice.txt"
 import os
 
 # File Input/Output: Creating a file
-with open("C:\\Users\\adity\\practice.txt", "x") as f:
+with open(FILE_PATH, "x") as f:
     f.write(
         "Hi everyone"
         + "\n"
@@ -13,17 +14,23 @@ with open("C:\\Users\\adity\\practice.txt", "x") as f:
     )
 
 # Reading and replacing content in the file
-with open("C:\\Users\\adity\\practice.txt", "r+") as f:
+with open(FILE_PATH, "r+") as f:
     data = f.read()
     new_data = data.replace("Java", "Python")
     print(new_data)
 
 # Searching for a specific word in the file
-with open("C:\\Users\\adity\\practice.txt", "r") as f:
+with open(FILE_PATH, "r") as f:
     data = f.read()
     if data.find("learning") != -1:
         print("Found!")
     else:
         print("Not Found")
 
-os.remove("C:\\Users\\adity\\practice.txt")
+# Finding the line number of a specific word in the file
+with open(FILE_PATH, "r", encoding="utf-8") as f:
+    for line_no, line in enumerate(f, start=1):
+        if "learning" in line:
+            print(line_no)
+
+os.remove(FILE_PATH)
